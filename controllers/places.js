@@ -1,15 +1,29 @@
 const router = require('express').Router()
 
-router.get('/', (req, res) => {
-    res.send('GET /places')
-})
-
 // router.post('/places', (req, res) => {
 //    res.send('POST /places')
 // })
 
-// //Commenting out all of this code below
+// //Commennting out all of this code below
 
+//Get /places
+router.get('/', (req, res) => {
+    let places = [{
+        name: 'H-Thai-ML',
+        city: 'Seattle',
+        state: 'WA',
+        cuisines: 'Thai, Pan-Asian',
+        pic: 'http://placekitten.com/250/250'
+      }, {
+        name: 'Coding Cat Cafe',
+        city: 'Phoenix',
+        state: 'AZ',
+        cuisines: 'Coffee, Bakery',
+        pic: 'http://placekitten.com/250/250'
+      }]
+      
+    res.render('places/index', { places })
+})
 // router.get('/places/new', (req, res) => {
 //    res.send('GET /places/new')
 // })

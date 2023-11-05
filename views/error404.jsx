@@ -3,7 +3,6 @@ const React = require('react')
 
 //imports local file named 'default' using a relative path beginning with './'
 const Def = require('./default')
-
 //declaring a Js function named 'error404'
 function error404 () {
   return (
