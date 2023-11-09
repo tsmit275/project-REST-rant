@@ -9,6 +9,12 @@ function error404 () {
     <Def>
         <main>
             <h1>404: PAGE NOT FOUND GIRL</h1>
+            <div>
+              <img src="https://tinyurl.com/yl9qaomh" alt="A pair of eyes" className="image-1"/>
+            </div>
+            <div>
+              Photo by <a href="AUTHOR_LINK">Victoria Knopf</a> on <a href="UNSPLASH_LINK">Unsplash</a>
+            </div>
             <p>Oops, sorry, we can't seem to find this page!</p>
         </main>
     </Def>
