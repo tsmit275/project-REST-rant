@@ -7,7 +7,7 @@ router.post('/places', (req, res) => {
 // //Commennting out all of this code below
 
 //Get /places
-router.get('/', (req, res) => {
+router.get('/new', (req, res) => {
     let places = [{
         name: 'H-Thai-ML',
         city: 'Seattle',
@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
         pic: '/images/coffee-cafe.jpg'
       }]
       
-    res.render('places/index', { places })
+    res.render('places/new', { places })
 })
 
  router.get('/new', (req, res) => {
@@ -36,6 +36,7 @@ router.get('/places/:id', (req, res) => {
  router.post('/places/:id', (req, res) => {
     res.send('POST /places/:id')
  })
+
 
  router.get('/places/:id/edit', (req, res) => {
     res.send('GET /place/:id/edit')
