@@ -1,6 +1,7 @@
 const router = require('express').Router()
 
-router.post('/places', (req, res) => {
+router.post('/', (req, res) => {
+  console.log(req.body)
   res.send('POST /places')
  })
 
