@@ -8,7 +8,7 @@ function index (data) {
           <div className="col-sm-6">
             <h2>{place.name}</h2>
             <p className="text-center">
-              { place.cusisines }
+              { place.cusines }
             </p>
             <img src={place.pic} alt={place.name}/>
             <p className="text-center">
@@ -24,7 +24,6 @@ function index (data) {
                 <div className="row">
                   {placesFormatted}
                 </div>
-                {placesFormatted}
             </main>
         </Def>
     )
